@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
     <title>Newsletter sign-up form</title>
 </head>
 <body>
-    
+    <div class="main-container">
+        <div class="sign-up">
+            <div class="titles">
+                <h1 class="title-text">
+                    Stay Updated!
+                </h1>
+                <p class="sub-title">
+                    Join 60,000+ product managers receiving monthly updates on:
+                </p>
+            </div>
+            <div class="updates">
+                <img src="assests/icon-list.svg" alt="" class="checkmark-img">
+                <p>Product discovery and building what matters</p>
+                <img src="assests/icon-list.svg" alt="" class="checkmark-img">
+                <p>Measuring to ensure updates are a success</p>
+                <img src="assests/icon-list.svg" alt="" class="checkmark-img">
+                <p>And much more!</p>
+            </div>
+            <div class="email">  
+                <form action="">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" required>
+                    <button class="btn">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img class="desktop-img" src="assests/illustration-sign-up-desktop.svg" alt="">
+            <img src="assests/illustration-sign-up-mobile.svg" alt="" class="mobile-img">
+        </div>
+    </div>
+    <div class="subscribed-container">
+        <div class="subscribed-content">
+            <div class="subscribed-heading">
+                <h2 class="subscribed-title">Thanks for subscribing!</h2>
+                <img src="assests/icon-success.svg" alt="" class="big-checkmark">
+            </div>
+        </div>
+        <p>A conformation email has been sent to jane@loremcompany.com. Please open it and confirm your subsription.</p>
+        <button class="dismiss">Dismiss message</button>
+    </div>
 </body>
 </html>
