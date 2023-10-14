@@ -1,0 +1,21 @@
+/* Resets */
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*  */
+body {
+    background-color: hsl(234, 29%, 20%);
+}
