@@ -15,7 +15,92 @@ img, svg {
     max-width: 100%;
 }
 
+/* Variables */
+:root{
+--clr-primary: hsl(4, 100%, 67%);
+--clr-main-bg: hsl(234, 29%, 20%);
+--clr-accent-1: hsl(235, 18%, 26%);
+--clr-grey: hsl(231, 7%, 60%);
+--clr-white: hsl(0, 0%, 100%);
+
+--p-font-size: 16px;
+}
+
 /*  */
 body {
-    background-color: hsl(234, 29%, 20%);
+    background-color: var(--clr-main-bg);
+    font-family: 'Roboto';
+}
+
+.main-container {
+    background-color: var(--clr-white);
+    margin: 25% auto 0 auto;
+    max-width: 60%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sign-up {
+    display: grid;
+    grid-template-rows: 1fr .5fr 1fr;
+    padding: 10% 0;
+    max-width: 80%;
+    margin-left: 15%;
+    
+}
+
+.titles {
+    padding-top: 45px;
+}
+
+.title-text {
+    color: var(--clr-main-bg);
+    font-size: 3em;
+}
+.sub-title {
+    padding-top: 1.7rem;
+    padding-bottom: 30px;
+}
+
+.updates {
+    display: grid;
+    grid-template-columns: 7% 93%;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: 80%;
+    gap: 15px;
+
+}
+
+.email-form label,
+.email-form button {
+    display: block;
+}
+
+.email-form label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+
+#email, .email-btn {
+    
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.desktop-img {
+   padding: 30px;
+}
+
+
+
+
+@media screen and (min-width: 375px) {
+    .mobile-img {
+        display: none;
+    }
 }
