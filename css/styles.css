@@ -123,7 +123,7 @@ h1 {
     
   
 }
-.desktop-img {
+.img {
    padding: 2rem;
    
 }   
@@ -150,8 +150,29 @@ h1 {
     width: 50px;
 }
 
-@media screen and (min-width: 375px) {
-    .mobile-img {
-        display: none;
+@media  screen and (max-width: 768px){
+    .img {
+        content: url("../assests/illustration-sign-up-mobile.svg");
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 95%;
+    }
+     
+    .titles {
+        margin-left: 7px;
+    }
+
+    .updates {
+        margin-left: -35px;
+    }
+
+    .email {
+        margin-right: 30px;
     }
 }
+    
