@@ -8,7 +8,11 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     main_container.classList.add('hide')
     subscribed_container.classList.remove('hide')
+
+    document.querySelector('.email-span').innerHTML = input.value
 })
+
+
 
 dismiss.addEventListener('click', (e) => {
     e.preventDefault()
