@@ -26,11 +26,13 @@ img, svg {
 --p-font-size: 16px;
 }
 
+/* Misc. */
 html {
     font-size: 16px;
 }
 
-/*  */
+
+
 body {
     background-color: var(--clr-main-bg);
     font-family: 'Roboto';
@@ -41,6 +43,7 @@ body {
     min-height: 100vh;
 }
 
+/* Form submit page */
 .main-container {
     background-color: var(--clr-white);
     margin-top: 10%;
@@ -95,8 +98,7 @@ h1 {
     padding-bottom: .4rem;
 }
 
-#email, .btn {
-    
+#email, .btn {   
     height: 3rem;
     width: 100%;
     border-radius: 3px;
@@ -116,22 +118,15 @@ h1 {
     cursor: pointer;
     background: rgb(223,73,99);
     background-image: linear-gradient(90deg, rgba(223,73,99,1)
-                    0%, rgba(227,109,50,1) 100%);
+    0%, rgba(227,109,50,1) 100%);
 }
 
-.hero-img {
-    
-  
-}
 .img {
    padding: 2rem;
    
 }   
 
-.hide {
-    display: none;
-}
-
+/* After-submit screen */
 .subscribed-container {
     background-color: var(--clr-white);
     width: 400px;
@@ -150,6 +145,7 @@ h1 {
     width: 50px;
 }
 
+/* Form submit mobile */
 @media  screen and (max-width: 768px){
     .img {
         content: url("../assests/illustration-sign-up-mobile.svg");
@@ -175,4 +171,35 @@ h1 {
         margin-right: 30px;
     }
 }
-    
+
+/* After submit mobile */
+@media screen and (max-width: 768px) {
+    .subscribed-container {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+   
+    .subscribed-container p,
+    .subscribed-container h1,
+    .big-checkmark {
+        margin-left: 25px;
+    }
+
+    .big-checkmark {
+        padding-top: 120px;
+        width: 60px;
+    }
+
+    .dismiss {
+        
+        margin-top: 250px;
+        margin-left: 40px;
+        max-width: 80%;
+        
+    }
+}
+.hide {
+    display: none;
+}
